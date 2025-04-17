@@ -6,16 +6,24 @@ import data from './quotes.json' with { type: "json"}
 
 
 // ---PREPORATION PAGE---
+
+// function 
+
+
+
 //make HTML
 const StartHTMl: FC = () => {
   return (
-    <html>
+    <html lang="en-US">
       <head>
         <title>Inspire Time!</title>
       </head>
-      <body>
-        <h2>Are You Ready to be INSPIRED!?!<br></br></h2>
-        <a href="http://localhost:3000/quote">IM READYYYY!</a>
+      <body style="background:#801818">
+        <h2 style="text-align:center; font-size:40px; color:white"><big>Are You Ready to be INSPIRED!?!</big></h2>
+        <hr></hr>
+        <p style="text-align:center; font-size:30px">
+          <a href="http://localhost:3000/quote" style="color:red">IM READYYYY!</a>
+        </p>
       </body>
     </html>
   )
@@ -52,20 +60,23 @@ function GenerateRandomQuote(): string {
 //make HTML
 const QuoteHTML: FC = () => {
   return (
-    <html>
+    <html lang="en-US">
       <head>
         <title>Inspire Time!</title>
       </head>
-      <body>
-        <h1>{GenerateRandomQuote()}</h1>
-        <h3>Still Need Motivation?</h3>
-        <a href="http://localhost:3000/quote">Hit Me Again!</a>
+      <body style="background:#801818">
+        <h1 style="text-align:center; font-size:30; color:white">Here's your quote!<br></br><br></br>{GenerateRandomQuote()}</h1>
+        <hr></hr>
+        <h3 style="text-align:center; color:white">Still Need Motivation?</h3>
+        <p style="text-align:center;">
+          <a href="http://localhost:3000/quote" style="color:red">Hit Me Again!</a>
+        </p>
         <h1>
-          <br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         </h1>
-        <p>(click here if your lame)</p>
-        <a href="http://localhost:3000/Lamos-Only:(">I'm Lame</a>
+        <p style="color:white">(click here if your lame)</p>
+        <a href="http://localhost:3000/Lamos-Only:(" style="color:red">I'm Lame</a>
       </body>
     </html>
   )
@@ -83,7 +94,7 @@ app.get('/quote', (c) => {
 // ---LAMOS ONLY PAGE---
 //display quote as JSON 
 app.get('/Lamos-Only:(', (c) => {
-  return c.json({ message: `Here's is your quote you lamo, ${GenerateRandomQuote()}` })
+  return c.json({ message: `Here's is your quote you lamo, '${GenerateRandomQuote()}'` })
 })
 
 
@@ -94,3 +105,19 @@ serve({
 }, (info) => {
   console.log(`Server is running on http://localhost:${info.port}`)
 })
+
+
+
+// TODO: look into this more
+// //tried using css to make coloring text and background less tedius, but i couldn't get it working.
+// <style>
+// body {
+//   <background-color>black</background-color>
+// }
+// h1 {
+//   <color>white</color>
+// }
+// a {
+//   <color>blue</color>
+// }
+// </style>
