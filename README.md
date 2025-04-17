@@ -11,8 +11,8 @@ This brings up a menu, asking which templete you want to use, in which we select
 Then we install all the dependencies for the project using:
 
 ```
-> cd my-app
-> pnpm i
+cd my-app
+pnpm i
 ```
 
 
