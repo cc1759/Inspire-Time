@@ -109,11 +109,15 @@ It starts by first making a random quote generating function, then creating the 
 
 ### The Lamos Only Page
 
-This page also generates a random quote, but this time as a json message (because it was in the requirements but i wanted to learn HTML to make the interface look good so I still had to add it)
+This page also generates a random quote, but this time as a json message (because it was in the requirements but i wanted to learn HTML to make the interface look good so I still had to add it)(located at: http://localhost:3000/Lamos-Only:()
 
 This only has one part, and that's sending a get req for \**/Lamos-Only:(*\* (idk if the :( has the possibility of ruining other things...). If it sees that req then it returns a json that says a little message and then your randomly generated quote (quote generated using function in "quote page")
 
 *from this page yu cannot do anything. How lame :(*
+
+### Server Side Section
+
+This section sets up a server, defines its fetch function, then logs in the console where the server is running.
 
 
 
