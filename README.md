@@ -34,9 +34,23 @@ cd my-app
 pnpm i
 ```
 
-This procces created a directory that looked something like this:
+This procces should create a directory that looks something like this:
 
-> *put example here*
+> - [INSERT FILE NAME]
+>   - node_modules
+>     - .bin
+>     - .pnpm
+>     - @hono
+>     - tsx
+>     - .modules.yaml
+>     - .pnpm-workspace-state
+>   - src
+>     - index.ts
+>   - .gitignore
+>   - package.json
+>   - pnpm-lock.yaml
+>   - README.md
+>   - tsconfig.json
 
 ## Added COMPILER OPTIONS
 
@@ -74,9 +88,8 @@ The two important are *quotes.json* and *index.tsx*.
 
 Each section is denoted in the script buy using:
 
-```
-// ---[INSERT SECTION NAME]---
-```
+> // ---[INSERT SECTION NAME]---
+
 
 ### The Preporation Page
 
