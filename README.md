@@ -9,6 +9,10 @@ cd insperational-quotes
 pnpm dev
 ```
 
+Server should be running at
+
+> http://localhost:3000
+
 
 
 ---
