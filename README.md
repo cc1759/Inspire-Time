@@ -1,4 +1,4 @@
-#FRAMEWORK
+# FRAMEWORK
 
 This project was created by making a quickstarted *Hono* project using the command:
 
